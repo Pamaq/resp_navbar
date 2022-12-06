@@ -50,10 +50,42 @@ body {
 	background-color: white;
 	border-radius: 10px;
 }
+.container {
+	display: grid;
+	margin: 15px;
+	padding: 10px;
+	grid-template-columns: 1fr 3fr;
+	gap: 15px;
+}
+header {
+	grid-column: 1/3;
+	grid-row: 1;
+	font-size: 1rem;
+	display: flex;
+	justify-content: center;
+}
+article {
+	grid-column: 2;
+	grid-row: 2;
+}
+aside {
+	grid-column: 1;
+	grid-row: 2;
+}
+aside img {
+	width: 100%;
+	height: auto;
+	margin-right: 15px;
+	margin-top:30px;
+}
+aside h2 {
+	font-size: 15px;
+}
 footer {
+	grid-column: 1/3;
+	grid-row: 3;
 	background-color: rgb(131, 101, 131);
 	color: white;
-	position: fixed;
 	margin-bottom: 0px;
 	width: 100%;
 	display: flex;
